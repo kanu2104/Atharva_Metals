@@ -1,0 +1,93 @@
+{
+  "capabilities": [
+    {
+      "id": "stamping",
+      "title": "Metal Stamping",
+      "icon": "Stamp",
+      "image": "/images/capabilities/stamping.jpg",
+      "summary": "Stage, progressive and heavy-tonnage stamping from 80T to 500T.",
+      "specs": [
+        "Stage Stamping Range: 80T ~ 200T",
+        "Progressive Stamping",
+        "Hydraulic Machine: 250T",
+        "Heavy Tonnage: 300T, 400T & 500T"
+      ]
+    },
+    {
+      "id": "welding",
+      "title": "Welding & Heavy Fabrication",
+      "icon": "Flame",
+      "image": "/images/capabilities/welding.jpg",
+      "summary": "Robotic and manual welding with certified welders and SPMs.",
+      "specs": [
+        "Projection Welding",
+        "CO2 Welding – Robotic & Manual",
+        "Spot Welding & Welding SPM",
+        "Certified Welders: 4 | Process: GMAW",
+        "Plate: 1.5mm to 16mm | Pipe: OD ≥ 73mm"
+      ]
+    },
+    {
+      "id": "tube",
+      "title": "Tube Bending & Fabrication",
+      "icon": "Spline",
+      "image": "/images/capabilities/tube-bending.jpg",
+      "summary": "CNC tube bending, squeezing and flaring for complex assemblies.",
+      "specs": [
+        "Tube Bending Machine (CNC)",
+        "Tube Squeezing",
+        "Tube Flaring",
+        "Tube Bending & Fabrication"
+      ]
+    },
+    {
+      "id": "toolroom",
+      "title": "In-House Tool Room",
+      "icon": "Wrench",
+      "image": "/images/capabilities/tool-room.jpg",
+      "summary": "Captive tool room for tool maintenance, repair and manufacturing.",
+      "specs": [
+        "Radial Drill Machine",
+        "Lathe Machine & Surface Grinder",
+        "Tool PM & Repair Activity",
+        "Manufacturing of Inserts & Punches"
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design & Development",
+      "icon": "DraftingCompass",
+      "image": "/images/capabilities/design.jpg",
+      "summary": "Concept-to-consignment engineering with SolidWorks & AutoCAD.",
+      "specs": [
+        "Engineering with SolidWorks & AutoCAD",
+        "Prototyping / Soft Tooling",
+        "Tool Design & Development",
+        "Design Partner: Rheomold Engineering Solutions LLP"
+      ]
+    },
+    {
+      "id": "quality",
+      "title": "Quality Assurance",
+      "icon": "ShieldCheck",
+      "image": "/images/capabilities/quality.jpg",
+      "summary": "Fully equipped QA lab with FARO Arm, CMM and precision metrology.",
+      "specs": [
+        "FARO Arm – 2 mtr & Checking Fixtures",
+        "DFT Meter",
+        "Surface Table, Height Gauge, Vernier Caliper",
+        "Micrometer, Bevel Protractor & more"
+      ]
+    }
+  ],
+  "rawMaterials": {
+    "title": "Raw Materials Processed",
+    "image": "/images/capabilities/raw-material.jpg",
+    "items": [
+      "GL / GPSP / Aluminium – 0.25 to 2 mm thickness",
+      "HR / CR – up to 16 mm thickness",
+      "SS 304 / SS 430 – up to 2 mm thickness",
+      "ERW Pipes – ø 25 mm to 82 mm, T up to 5 mm"
+    ]
+  }
+}

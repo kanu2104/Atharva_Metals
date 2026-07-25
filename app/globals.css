@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-muted-bg: #eaf3fa;
+  --color-card: #ffffff;
+  --color-primary: #2563eb;
+  --color-accent: #2563eb;
+  --color-accent-soft: #3b82f6;
+  --color-accent-deep: #0f3d5e;
+  --color-secondary: #334155;
+  --color-foreground: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #cbd5e1;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-2xl: 1.25rem;
+
+  --animate-marquee: marquee 36s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #eaf3fa;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+  }
+}
+
+@layer utilities {
+  .hero-stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  /* Light glassmorphism — used sparingly for statistics cards */
+  .glass {
+    background: color-mix(in srgb, #ffffff 70%, transparent);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid color-mix(in srgb, #ffffff 70%, transparent);
+    box-shadow: 0 18px 40px -22px rgba(37, 99, 235, 0.35);
+  }
+
+  .glass-strong {
+    background: color-mix(in srgb, #ffffff 85%, transparent);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 24px 50px -24px rgba(37, 99, 235, 0.4);
+  }
+
+  /* White card with subtle shadow */
+  .card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04),
+      0 14px 30px -22px rgba(15, 61, 94, 0.35);
+  }
+
+  .text-gradient {
+    background: linear-gradient(180deg, #1e293b 0%, #475569 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gradient-accent {
+    background: linear-gradient(120deg, #3b82f6 0%, #2563eb 50%, #0f3d5e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #0f3d5e 0%, #1d4ed8 55%, #2563eb 100%);
+  }
+
+  .divider-gradient {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      #2563eb 50%,
+      transparent 100%
+    );
+  }
+
+  .grid-pattern {
+    background-image: linear-gradient(
+        to right,
+        rgba(37, 99, 235, 0.06) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .grid-pattern-light {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .section-pad {
+    padding-top: clamp(1.5rem, 3vw, 3rem);
+    padding-bottom: clamp(4.5rem, 9vw, 9rem);
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "plants": [
+    {
+      "id": "pune",
+      "name": "Pune Plant",
+      "isFlagship": true,
+      "image": "/images/plants/pune.jpg",
+      "address": "Plot No. B 31/3, Ranjangaon MIDC, Pune",
+      "state": "Maharashtra",
+      "area": "64,560 sq. ft.",
+      "machines": "18",
+      "customers": ["Haier", "Atomberg", "Toro", "Belrise", "Duroshox", "Hikoki"]
+    },
+    {
+      "id": "vasai",
+      "name": "Vasai Plant",
+      "isFlagship": false,
+      "image": "/images/plants/pune.jpg",
+      "address": "S. No. 184, Daji Bhoir Compound, Near Mathura Hotel, Poman, Vasai East",
+      "state": "Maharashtra",
+      "area": "25,000 sq. ft.",
+      "machines": "06",
+      "customers": ["Blue Star Ltd. (Wada & Dadra)"]
+    },
+    {
+      "id": "ahmedabad",
+      "name": "Ahmedabad Plant",
+      "isFlagship": false,
+      "image": "/images/plants/pune.jpg",
+      "address": "S. No. 702, Aarnav-2, Rupal Bavla–Rajkot Highway, Ahmedabad",
+      "state": "Gujarat",
+      "area": "50,000 sq. ft.",
+      "machines": "21",
+      "customers": ["Versuni (Philips)"]
+    }
+  ]
+}

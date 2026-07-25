@@ -1,0 +1,118 @@
+{
+  "name": "Atharva Metals & Engineering Pvt. Ltd.",
+  "shortName": "Atharva Metals",
+  "tagline": "Precision Metal Stamping & Engineered Assemblies",
+  "heroTagline": "Precision | Quality | Commitment",
+  "heroHeadline": "Engineering Precision in Metal",
+  "heroSubheadline": "Precision Metal Stampings, Assemblies & Engineering Solutions for a Stronger Tomorrow.",
+  "heroHighlights": [
+    { "icon": "Factory", "value": "3+", "label": "Manufacturing Plants" },
+    { "icon": "Cog", "value": "1,20,000+", "label": "Sq Ft Operational Area" },
+    { "icon": "Users", "value": "7+", "label": "Global Customers" },
+    { "icon": "Award", "value": "IATF 16949:2016", "label": "Certified" }
+  ],
+  "established": 2019,
+  "group": "Atharva Group",
+  "groupCompanies": [
+    {
+      "name": "Atharva Metals & Engineering",
+      "focus": "Metal Stamping",
+      "since": 2019,
+      "area": "64,560 Sq. ft.",
+      "location": "Ranjangaon",
+      "detail": "Stage & Progressive Stamping, Welding, Pipe Bending & Special Purpose Machines"
+    },
+    {
+      "name": "Atharva Polymers",
+      "focus": "Injection Moulding",
+      "since": 2008,
+      "area": "1,08,900 Sq. ft.",
+      "location": "Ranjangaon",
+      "detail": "Ultrasonic Welding, Pad Printing, Laser Etching, Assembly Line & Painting Facility"
+    },
+    {
+      "name": "Atharva Corrugation",
+      "focus": "Corrugation Box",
+      "since": 2014,
+      "area": "51,000 Sq. ft.",
+      "location": "Ranjangaon",
+      "detail": "Automatic production line with installed capacity of 25,000 MT per annum"
+    },
+    {
+      "name": "Thermofoam Engineering",
+      "focus": "EPS Packaging",
+      "since": 2023,
+      "area": "50,000 Sq. ft.",
+      "location": "Ranjangaon",
+      "detail": "Vacuum based fully automatic line with installed capacity of 2,400 MT per annum"
+    }
+  ],
+  "introduction": {
+    "title": "Company Introduction",
+    "paragraphs": [
+      "Atharva Metals & Engineering is in the business of metal stampings and assemblies, serving the white goods, automotive and off-road vehicle industries.",
+      "In operation since 2019 with Haier Appliances as our first customer, we have grown into a trusted multi-location manufacturing partner for global OEMs.",
+      "Our flagship plant in MIDC Ranjangaon spans 64,560 sq. ft. and houses Stage & Progressive Stamping, Welding, Pipe Bending and Special Purpose Machines."
+    ],
+    "qualityPolicy": "We at Atharva Metals & Engineering are committed to becoming the leader in the business of stamped metal components by effectively and efficiently implementing a Quality Management System, continuously upgrading our processes and striving to exceed our goals. We enhance customer satisfaction through continual improvement in all areas of the organisation while satisfying all our stakeholders."
+  },
+  "stats": [
+    { "label": "Years of Excellence", "value": 6, "suffix": "+" },
+    { "label": "Manufacturing Plants", "value": 3, "suffix": "" },
+    { "label": "Total Machines", "value": 45, "suffix": "+" },
+    { "label": "Global OEM Customers", "value": 9, "suffix": "+" },
+    { "label": "Skilled Workforce", "value": 157, "suffix": "+" },
+    { "label": "Countries Served", "value": 4, "suffix": "" }
+  ],
+  "workforce": {
+    "staff": 42,
+    "operators": 25,
+    "contract": 90
+  },
+  "designCenter": {
+    "title": "Design & Development Center",
+    "subtitle": "One-Stop Integrated Service from Concept to Consignment",
+    "points": [
+      "Full-fledged engineering department with SolidWorks & AutoCAD",
+      "Prototyping / Soft Tooling",
+      "Tool Design & Development of Tools"
+    ],
+    "designPartner": "Rheomold Engineering Solutions LLP",
+    "location": "World Trade Center, WTC Tower 2, Unit No. 215, Near EON Free Zone, Kharadi, Pune – 411014"
+  },
+  "journey": [
+    { "year": "2019", "events": ["Company formation", "Press machines 80T–400T & welding"] },
+    { "year": "2020", "events": ["160T press with progressive stamping", "2nd 400T press"] },
+    { "year": "2021", "events": ["Hydraulic 250T press for deep draw", "Aluminium fan blade mfg", "Addition of presses (80T–200T)", "IATF 16949 certified"] },
+    { "year": "2022", "events": ["500T press added", "Exports to US", "Pipe manufacturing started", "CNC pipe bending installed", "CMM (FARO)"] },
+    { "year": "2023", "events": ["Blue Star business", "Kitchen Appliances Co.", "HOB manufacturing"] },
+    { "year": "2024", "events": ["Robotic welding", "New 300T machine"] },
+    { "year": "2025", "events": ["Blue Star volume ramp-up", "New dedicated plant for Blue Star"] },
+    { "year": "2026", "events": ["New dedicated plant for Versuni – Philips in Gujarat"] }
+  ],
+  "salesGrowth": {
+    "title": "Sales Growth — Metals Business",
+    "note": "Indexed to FY 2019-20 = base. FY 2026-27 is projected.",
+    "series": [
+      { "year": "FY 19-20", "value": 2.2, "projected": false },
+      { "year": "FY 20-21", "value": 2.6, "projected": false },
+      { "year": "FY 21-22", "value": 5.4, "projected": false },
+      { "year": "FY 22-23", "value": 6.9, "projected": false },
+      { "year": "FY 23-24", "value": 6.9, "projected": false },
+      { "year": "FY 24-25", "value": 8.9, "projected": false },
+      { "year": "FY 25-26", "value": 10.0, "projected": false },
+      { "year": "FY 26-27", "value": 17.1, "projected": true }
+    ],
+    "kpis": [
+      { "label": "Growth FY20 → FY26", "value": 4.5, "suffix": "x" },
+      { "label": "Revenue CAGR", "value": 29, "suffix": "%" },
+      { "label": "Projected by FY27", "value": 7.8, "suffix": "x" }
+    ]
+  },
+  "contact": {
+    "headOffice": "Plot No. B 31/3, Ranjangaon MIDC, Tal. Shirur, Pune – 412209, Maharashtra, India",
+    "designOffice": "World Trade Center, Tower 2, Unit 215, Near EON Free Zone, Kharadi, Pune – 411014",
+    "email": "info@atharvametals.com",
+    "phone": "+91 00000 00000"
+  }
+}

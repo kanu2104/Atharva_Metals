@@ -1,0 +1,43 @@
+{
+  "customers": [
+    { "name": "Haier", "segment": "White Goods", "since": 2019, "logo": "/images/customers/haier.svg", "color": "#00529B" },
+    { "name": "Blue Star", "segment": "Air Conditioning", "since": 2023, "logo": null, "color": "#0072BC" },
+    { "name": "Versuni (Philips)", "segment": "Kitchen Appliances", "since": 2024, "logo": "/images/customers/philips.svg", "color": "#0B5ED7" },
+    { "name": "Toro", "segment": "Off-Road Vehicles", "since": 2022, "logo": "/images/customers/toro.png", "color": "#E2231A" },
+    { "name": "Haworth", "segment": "Office Furniture", "since": 2023, "logo": null, "color": "#111827" },
+    { "name": "Atomberg", "segment": "Ceiling Fans", "since": 2021, "logo": null, "color": "#F47216" },
+    { "name": "Belrise Industries", "segment": "Automotive", "since": 2022, "logo": null, "color": "#1F9D55" },
+    { "name": "Duroshox", "segment": "Automotive", "since": 2022, "logo": null, "color": "#E2231A" },
+    { "name": "Hikoki", "segment": "Power Tools", "since": 2023, "logo": null, "color": "#008A4B" }
+  ],
+  "globalPresence": {
+    "title": "Global Presence",
+    "subtitle": "Trusted by leading OEMs across continents",
+    "regions": [
+      {
+        "country": "United States",
+        "code": "USA",
+        "customers": "The Toro & Haworth",
+        "locations": ["Beatrice, Nebraska", "Tomah, Wisconsin", "Plymouth, Massachusetts", "Lyndale, Minnesota", "Leominster, Massachusetts"]
+      },
+      {
+        "country": "United Kingdom",
+        "code": "UK",
+        "customers": "The Toro",
+        "locations": ["Hertfordshire"]
+      },
+      {
+        "country": "Mexico",
+        "code": "MX",
+        "customers": "Jabil",
+        "locations": ["Guadalajara"]
+      },
+      {
+        "country": "India",
+        "code": "IN",
+        "customers": "Haier, Blue Star, Versuni, Atomberg & more",
+        "locations": ["Pune, Maharashtra", "Vasai, Maharashtra", "Ahmedabad, Gujarat"]
+      }
+    ]
+  }
+}

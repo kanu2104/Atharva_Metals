@@ -1,0 +1,98 @@
+{
+  "categories": [
+    {
+      "id": "white-goods",
+      "title": "White Goods",
+      "tagline": "Sheet metal components & assemblies for appliances",
+      "products": [
+        {
+          "name": "Deep Freezer & Refrigerator Panels",
+          "customer": "Haier",
+          "image": "/images/products/deep-freezer.jpg",
+          "parts": ["Back Panels", "Compressor Base Plates", "Bottom Panel Assemblies", "Caster Plates", "Hinge Reinforcements"]
+        },
+        {
+          "name": "Water Heater Components",
+          "customer": "Haier",
+          "image": "/images/products/water-heater.jpg",
+          "parts": ["Top & Bottom Domes", "Square & Round Flanges", "Lock Nose"]
+        },
+        {
+          "name": "AC Sheet Metal Parts",
+          "customer": "Blue Star / Haier",
+          "image": "/images/products/ac-parts.jpg",
+          "parts": ["Fan Panel & FRS", "Base Panel", "LH / RH Panels", "Channel & Valve Plates", "Motor Mount & Partition", "Top Panel"]
+        },
+        {
+          "name": "Ceiling Fan Blades",
+          "customer": "Atomberg",
+          "image": "/images/products/ceiling-fan.jpg",
+          "parts": ["Aluminium Ceiling Fan Blades"]
+        }
+      ]
+    },
+    {
+      "id": "deep-draw",
+      "title": "Deep Draw Parts",
+      "tagline": "Precision deep-drawn components",
+      "products": [
+        {
+          "name": "Deep Draw Assemblies",
+          "customer": "Kitchen Appliances",
+          "image": "/images/products/deep-draw.jpg",
+          "parts": ["Bottom Dome Assembly – T-1.6mm, 120mm deep", "Hob with 53mm deep draw"]
+        }
+      ]
+    },
+    {
+      "id": "off-road",
+      "title": "Off-Road Vehicle",
+      "tagline": "Heavy fabricated tube welding assemblies",
+      "products": [
+        {
+          "name": "Off-Road Utility Vehicle Assemblies",
+          "customer": "Toro",
+          "image": "/images/products/off-road-vehicle.jpg",
+          "parts": ["Deck Strut Assembly", "Rear Guard", "Tube-Canopy Mount", "Hip Restraint ASM (LH & RH)"]
+        },
+        {
+          "name": "Heavy Fabricated Steering Assemblies",
+          "customer": "Toro",
+          "image": "/images/products/lawn-mower.jpg",
+          "parts": ["Steering Arm ASM (Welded)", "3mm thick tube columns", "Brackets 6mm to 16mm thick"]
+        },
+        {
+          "name": "Welded Tube Assemblies",
+          "customer": "Toro",
+          "image": "/images/products/welded-assembly.jpg",
+          "parts": ["Tube-Mount Front", "Heavy fabricated tube welding assemblies"]
+        }
+      ]
+    },
+    {
+      "id": "power-tools",
+      "title": "Power Tools & Furniture",
+      "tagline": "Precision stamped & deep-drawn parts",
+      "products": [
+        {
+          "name": "Power Tool Parts",
+          "customer": "Hikoki",
+          "image": "/images/products/welded-assembly.jpg",
+          "parts": ["Hook", "Blade Detector", "Nail Feeder", "Nail Rail", "Trigger"]
+        },
+        {
+          "name": "Air Fryer Parts",
+          "customer": "Versuni (Philips)",
+          "image": "/images/products/deep-draw.jpg",
+          "parts": ["Heat Shield", "Bottom Tray", "Dip Tray", "Crispy Tray", "Clip", "Fan"]
+        },
+        {
+          "name": "Furniture Mechanism Parts",
+          "customer": "Haworth & AIS",
+          "image": "/images/products/welded-assembly.jpg",
+          "parts": ["GH2 Glide Housing", "L-Bracket", "Top Plate", "Twist Plate", "PED & LAT Cam / Catch"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "certifications": [
+    {
+      "name": "IATF 16949:2016",
+      "title": "Automotive Quality Management System",
+      "issuedBy": "TÜV SÜD Management Service GmbH",
+      "scope": "Manufacture of Sheet Metal Press Parts & Welded Assemblies",
+      "certNo": "IATF Certificate No. 0582617",
+      "registrationNo": "12 111 61822 TMS",
+      "edition": "First Edition 2016-10-01",
+      "highlight": true
+    }
+  ],
+  "standards": [
+    "Quality Management System (QMS)",
+    "Continual Improvement Culture",
+    "PPAP & APQP Documentation",
+    "FARO Arm & CMM Metrology",
+    "Certified Welding (GMAW) Process"
+  ]
+}
