@@ -61,13 +61,13 @@
     { "label": "Manufacturing Plants", "value": 3, "suffix": "" },
     { "label": "Total Machines", "value": 45, "suffix": "+" },
     { "label": "Global OEM Customers", "value": 9, "suffix": "+" },
-    { "label": "Skilled Workforce", "value": 157, "suffix": "+" },
+    { "label": "Skilled Workforce", "value": 250, "suffix": "+" },
     { "label": "Countries Served", "value": 4, "suffix": "" }
   ],
   "workforce": {
-    "staff": 42,
-    "operators": 25,
-    "contract": 90
+    "staff": 67,
+    "operators": 40,
+    "contract": 143
   },
   "designCenter": {
     "title": "Design & Development Center",
@@ -112,7 +112,7 @@
   "contact": {
     "headOffice": "Plot No. B 31/3, Ranjangaon MIDC, Tal. Shirur, Pune – 412209, Maharashtra, India",
     "designOffice": "World Trade Center, Tower 2, Unit 215, Near EON Free Zone, Kharadi, Pune – 411014",
-    "email": "info@atharvametals.com",
-    "phone": "+91 00000 00000"
+    "email": "shantanua@atharvametals.com",
+    "phone": "+91 90115 34516"
   }
 }

@@ -42,7 +42,7 @@ export function Customers() {
   const marquee = [...customers, ...customers];
 
   return (
-    <section id="customers" className="section-pad relative bg-white">
+    <section id="customers" className="section-pad relative overflow-x-clip bg-white">
       <div className="absolute inset-0 grid-pattern opacity-60" />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading

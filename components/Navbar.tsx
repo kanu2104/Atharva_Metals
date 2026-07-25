@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -45,14 +44,14 @@ export function Navbar() {
       >
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:h-20 sm:px-8">
           <a href="#home" className="group flex items-center gap-3">
-            <span className="flex items-center justify-center rounded-lg bg-white px-2.5 py-1.5 shadow-sm ring-1 ring-slate-200/70 transition-transform duration-300 group-hover:scale-[1.03]">
-              <Image
-                src="/images/brand-mark.jpg"
+            <span className="flex shrink-0 items-center justify-center rounded-lg bg-white px-2.5 py-1.5 shadow-sm ring-1 ring-slate-200/70 transition-transform duration-300 group-hover:scale-[1.03]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/favicon.png"
                 alt="Atharva Metals & Engineering"
-                width={188}
-                height={124}
-                priority
-                className="h-7 w-auto"
+                width={114}
+                height={75}
+                className="h-7 w-auto max-w-[7rem] object-contain"
               />
             </span>
             <span

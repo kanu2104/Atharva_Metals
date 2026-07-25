@@ -16,8 +16,8 @@ type VideoCardProps = {
 
 export function VideoCard({
   poster = "/images/hero/hero-factory.jpg",
-  videoSrc = "/videos/hero.mp4",
-  title = `See ${company.shortName} in Action`,
+  videoSrc = "/videos/corporate-overview.mp4",
+  title = `${company.shortName} Corporate Overview`,
   subtitle = "Company Film",
   className = "",
 }: VideoCardProps) {

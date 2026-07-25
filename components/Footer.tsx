@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Building2, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -104,13 +103,14 @@ export function Footer() {
           <div className="flex flex-col justify-between gap-10 lg:flex-row">
             <div className="max-w-sm">
               <div className="flex items-center gap-3">
-                <span className="flex items-center justify-center rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200">
-                  <Image
-                    src="/images/brand-mark.jpg"
+                <span className="flex shrink-0 items-center justify-center rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/favicon.png"
                     alt="Atharva Metals & Engineering"
-                    width={188}
-                    height={124}
-                    className="h-9 w-auto"
+                    width={114}
+                    height={75}
+                    className="h-9 w-auto max-w-[8rem] object-contain"
                   />
                 </span>
                 <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">

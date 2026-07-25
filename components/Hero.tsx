@@ -2,13 +2,16 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Volume2, VolumeX } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import company from "@/data/company.json";
 
 const stats = company.heroHighlights;
+const INTRO_VIDEO = "/videos/corporate-overview.mp4";
+const INTRO_POSTER = "/images/hero/hero-factory.jpg";
 
 const fadeLeft = (delay: number) => ({
-  initial: { opacity: 0, x: -48 },
+  initial: { opacity: 0, x: -24 },
   animate: { opacity: 1, x: 0 },
   transition: {
     duration: 0.75,
@@ -18,26 +21,72 @@ const fadeLeft = (delay: number) => ({
 });
 
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [muted, setMuted] = useState(true);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const tryPlay = () => {
+      video.muted = true;
+      void video.play().then(() => setVideoReady(true)).catch(() => {
+        // Autoplay blocked — poster image remains visible
+      });
+    };
+
+    if (video.readyState >= 2) tryPlay();
+    else video.addEventListener("loadeddata", tryPlay, { once: true });
+
+    return () => video.removeEventListener("loadeddata", tryPlay);
+  }, []);
+
+  const toggleMute = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    const next = !muted;
+    video.muted = next;
+    setMuted(next);
+    if (!next) void video.play().catch(() => {});
+  };
+
   return (
     <section
       id="home"
       className="relative flex h-screen min-h-[100svh] items-center overflow-hidden bg-[#0f3d5e]"
     >
-      {/* Background image — slow zoom in */}
+      {/* Intro video — full-bleed background */}
       <motion.div
         className="absolute inset-0"
-        initial={{ scale: 1.12 }}
+        initial={{ scale: 1.08 }}
         animate={{ scale: 1 }}
         transition={{ duration: 14, ease: "easeOut" }}
       >
         <Image
-          src="/images/hero/hero-factory.jpg"
+          src={INTRO_POSTER}
           alt=""
           fill
           priority
           aria-hidden
-          className="object-cover object-center sm:object-[65%_center]"
+          className={`object-cover object-center sm:object-[65%_center] transition-opacity duration-700 ${
+            videoReady ? "opacity-0" : "opacity-100"
+          }`}
         />
+        <video
+          ref={videoRef}
+          className={`absolute inset-0 h-full w-full object-cover object-center sm:object-[65%_center] transition-opacity duration-700 ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
+          poster={INTRO_POSTER}
+          autoPlay
+          muted
+          playsInline
+          preload="metadata"
+          aria-hidden
+        >
+          <source src={INTRO_VIDEO} type="video/mp4" />
+        </video>
         <div
           className="absolute inset-0"
           style={{
@@ -52,7 +101,7 @@ export function Hero() {
           {/* Top small text */}
           <motion.p
             {...fadeLeft(0.1)}
-            className="text-base font-medium uppercase tracking-[6px] text-[#60a5fa]"
+            className="max-w-full text-sm font-medium uppercase tracking-[0.2em] text-[#60a5fa] sm:text-base sm:tracking-[0.35em]"
           >
             {company.heroTagline}
           </motion.p>
@@ -120,7 +169,7 @@ export function Hero() {
             }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="mt-10"
+            className="mt-10 flex flex-wrap items-center gap-4"
           >
             <a
               href="#capabilities"
@@ -129,9 +178,27 @@ export function Hero() {
               Explore Our Capabilities
               <ArrowRight className="size-5" />
             </a>
+            <a
+              href="#about"
+              className="inline-flex items-center gap-2 rounded-[14px] border border-white/30 bg-white/10 px-6 py-[18px] text-base font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20"
+            >
+              Watch Company Film
+            </a>
           </motion.div>
         </div>
       </div>
+
+      {videoReady && (
+        <button
+          type="button"
+          onClick={toggleMute}
+          aria-label={muted ? "Unmute intro video" : "Mute intro video"}
+          className="absolute bottom-6 right-5 z-20 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-3.5 py-2 text-xs font-medium text-white backdrop-blur-md transition-colors hover:bg-black/50 sm:bottom-8 sm:right-8"
+        >
+          {muted ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
+          {muted ? "Sound off" : "Sound on"}
+        </button>
+      )}
     </section>
   );
 }

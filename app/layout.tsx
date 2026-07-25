@@ -48,7 +48,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${display.variable}`}>
-      <body className="bg-background text-foreground antialiased">{children}</body>
+      <body className="bg-background text-foreground antialiased">
+        <div className="min-h-dvh w-full max-w-[100vw] overflow-x-clip">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
