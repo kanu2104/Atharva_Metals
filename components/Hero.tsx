@@ -2,13 +2,10 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Volume2, VolumeX } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { ArrowRight } from "lucide-react";
 import company from "@/data/company.json";
 
 const stats = company.heroHighlights;
-const INTRO_VIDEO = "/videos/corporate-overview.mp4";
-const INTRO_POSTER = "/images/hero/hero-factory.jpg";
 
 const fadeLeft = (delay: number) => ({
   initial: { opacity: 0, x: -24 },
@@ -21,72 +18,26 @@ const fadeLeft = (delay: number) => ({
 });
 
 export function Hero() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [muted, setMuted] = useState(true);
-  const [videoReady, setVideoReady] = useState(false);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const tryPlay = () => {
-      video.muted = true;
-      void video.play().then(() => setVideoReady(true)).catch(() => {
-        // Autoplay blocked — poster image remains visible
-      });
-    };
-
-    if (video.readyState >= 2) tryPlay();
-    else video.addEventListener("loadeddata", tryPlay, { once: true });
-
-    return () => video.removeEventListener("loadeddata", tryPlay);
-  }, []);
-
-  const toggleMute = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    const next = !muted;
-    video.muted = next;
-    setMuted(next);
-    if (!next) void video.play().catch(() => {});
-  };
-
   return (
     <section
       id="home"
       className="relative flex h-screen min-h-[100svh] items-center overflow-hidden bg-[#0f3d5e]"
     >
-      {/* Intro video — full-bleed background */}
+      {/* Background image — slow zoom in */}
       <motion.div
         className="absolute inset-0"
-        initial={{ scale: 1.08 }}
+        initial={{ scale: 1.12 }}
         animate={{ scale: 1 }}
         transition={{ duration: 14, ease: "easeOut" }}
       >
         <Image
-          src={INTRO_POSTER}
+          src="/images/hero/hero-factory.jpg"
           alt=""
           fill
           priority
           aria-hidden
-          className={`object-cover object-center sm:object-[65%_center] transition-opacity duration-700 ${
-            videoReady ? "opacity-0" : "opacity-100"
-          }`}
+          className="object-cover object-center sm:object-[65%_center]"
         />
-        <video
-          ref={videoRef}
-          className={`absolute inset-0 h-full w-full object-cover object-center sm:object-[65%_center] transition-opacity duration-700 ${
-            videoReady ? "opacity-100" : "opacity-0"
-          }`}
-          poster={INTRO_POSTER}
-          autoPlay
-          muted
-          playsInline
-          preload="metadata"
-          aria-hidden
-        >
-          <source src={INTRO_VIDEO} type="video/mp4" />
-        </video>
         <div
           className="absolute inset-0"
           style={{
@@ -157,7 +108,7 @@ export function Hero() {
             ))}
           </div>
 
-          {/* CTA button */}
+          {/* CTA buttons */}
           <motion.div
             initial={{ opacity: 0, scale: 0.88 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -187,18 +138,6 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-
-      {videoReady && (
-        <button
-          type="button"
-          onClick={toggleMute}
-          aria-label={muted ? "Unmute intro video" : "Mute intro video"}
-          className="absolute bottom-6 right-5 z-20 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/35 px-3.5 py-2 text-xs font-medium text-white backdrop-blur-md transition-colors hover:bg-black/50 sm:bottom-8 sm:right-8"
-        >
-          {muted ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
-          {muted ? "Sound off" : "Sound on"}
-        </button>
-      )}
     </section>
   );
 }
