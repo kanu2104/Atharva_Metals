@@ -1,14 +1,14 @@
 {
   "customers": [
     { "name": "Haier", "segment": "White Goods", "since": 2019, "logo": "/images/customers/haier.svg", "color": "#00529B" },
-    { "name": "Blue Star", "segment": "Air Conditioning", "since": 2023, "logo": null, "color": "#0072BC" },
+    { "name": "Blue Star", "segment": "Air Conditioning", "since": 2023, "logo": "/images/customers/bluestar.png", "color": "#0072BC" },
     { "name": "Versuni (Philips)", "segment": "Kitchen Appliances", "since": 2024, "logo": "/images/customers/philips.svg", "color": "#0B5ED7" },
     { "name": "Toro", "segment": "Off-Road Vehicles", "since": 2022, "logo": "/images/customers/toro.png", "color": "#E2231A" },
-    { "name": "Haworth", "segment": "Office Furniture", "since": 2023, "logo": null, "color": "#111827" },
-    { "name": "Atomberg", "segment": "Ceiling Fans", "since": 2021, "logo": null, "color": "#F47216" },
-    { "name": "Belrise Industries", "segment": "Automotive", "since": 2022, "logo": null, "color": "#1F9D55" },
-    { "name": "Duroshox", "segment": "Automotive", "since": 2022, "logo": null, "color": "#E2231A" },
-    { "name": "Hikoki", "segment": "Power Tools", "since": 2023, "logo": null, "color": "#008A4B" }
+    { "name": "Haworth", "segment": "Office Furniture", "since": 2023, "logo": "/images/customers/haworth.png", "color": "#E2231A" },
+    { "name": "Atomberg", "segment": "Ceiling Fans", "since": 2021, "logo": "/images/customers/atomberg.svg", "color": "#FDB913" },
+    { "name": "Belrise Industries", "segment": "Automotive", "since": 2022, "logo": "/images/customers/belrise.png", "color": "#1F9D55" },
+    { "name": "Duroshox", "segment": "Automotive", "since": 2022, "logo": "/images/customers/duroshox.svg", "color": "#E2231A" },
+    { "name": "Hikoki", "segment": "Power Tools", "since": 2023, "logo": "/images/customers/hikoki.png", "color": "#008A4B" }
   ],
   "globalPresence": {
     "title": "Global Presence",

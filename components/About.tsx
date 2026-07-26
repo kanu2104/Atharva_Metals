@@ -5,7 +5,6 @@ import { Boxes, Factory, Target } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Counter } from "@/components/ui/counter";
 import { Reveal, StaggerGroup, staggerItem } from "@/components/ui/reveal";
-import { HeadcountChart } from "@/components/HeadcountChart";
 import { VideoCard } from "@/components/VideoCard";
 import company from "@/data/company.json";
 
@@ -41,7 +40,7 @@ export function About() {
         {/* Intro + video */}
         <div className="mt-20 grid items-center gap-12 lg:grid-cols-2">
           <Reveal direction="right">
-            <div className="relative">
+            <div id="company-film" className="relative scroll-mt-24">
               <VideoCard />
               <div className="absolute -bottom-6 -right-4 hidden rounded-2xl glass-strong px-6 py-5 sm:block">
                 <div className="flex items-center gap-3">
@@ -79,11 +78,6 @@ export function About() {
               </div>
             </div>
           </Reveal>
-        </div>
-
-        {/* Headcount chart */}
-        <div className="mt-20">
-          <HeadcountChart />
         </div>
 
         {/* Group companies */}

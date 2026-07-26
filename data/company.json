@@ -84,7 +84,7 @@
     { "year": "2019", "events": ["Company formation", "Press machines 80T–400T & welding"] },
     { "year": "2020", "events": ["160T press with progressive stamping", "2nd 400T press"] },
     { "year": "2021", "events": ["Hydraulic 250T press for deep draw", "Aluminium fan blade mfg", "Addition of presses (80T–200T)", "IATF 16949 certified"] },
-    { "year": "2022", "events": ["500T press added", "Exports to US", "Pipe manufacturing started", "CNC pipe bending installed", "CMM (FARO)"] },
+    { "year": "2022", "events": ["500T press added", "Exports to US", "Pipe manufacturing started", "CNC pipe bending installed"] },
     { "year": "2023", "events": ["Blue Star business", "Kitchen Appliances Co.", "HOB manufacturing"] },
     { "year": "2024", "events": ["Robotic welding", "New 300T machine"] },
     { "year": "2025", "events": ["Blue Star volume ramp-up", "New dedicated plant for Blue Star"] },
@@ -92,7 +92,9 @@
   ],
   "salesGrowth": {
     "title": "Sales Growth — Metals Business",
-    "note": "Indexed to FY 2019-20 = base. FY 2026-27 is projected.",
+    "note": "Revenue in million dollars (USD). FY 2026-27 is projected.",
+    "unit": "Million dollars",
+    "unitShort": "$M",
     "series": [
       { "year": "FY 19-20", "value": 2.2, "projected": false },
       { "year": "FY 20-21", "value": 2.6, "projected": false },

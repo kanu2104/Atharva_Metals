@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Quote, TrendingUp } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Counter } from "@/components/ui/counter";
 import { Reveal, StaggerGroup, staggerItem } from "@/components/ui/reveal";
@@ -24,7 +24,7 @@ export function Growth() {
         {/* Sales growth chart */}
         <Reveal className="mt-16">
           <div className="overflow-hidden rounded-3xl card p-6 sm:p-10">
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <div className="flex items-center gap-2 text-accent">
                   <TrendingUp className="size-5" />
@@ -34,10 +34,13 @@ export function Growth() {
                 </div>
                 <p className="mt-1 text-sm text-muted">{salesGrowth.note}</p>
               </div>
+              <span className="inline-flex w-fit items-center rounded-full border border-accent/20 bg-accent/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">
+                {salesGrowth.unit}
+              </span>
             </div>
 
             {/* Bars */}
-            <div className="mt-10 flex h-64 items-end justify-between gap-2 sm:gap-4">
+            <div className="mt-10 flex h-72 items-end justify-between gap-2 pt-8 sm:gap-4">
               {salesGrowth.series.map((s, i) => (
                 <div
                   key={s.year}
@@ -55,8 +58,11 @@ export function Growth() {
                           : "bg-gradient-to-t from-[#0f3d5e] to-accent"
                       }`}
                     >
-                      <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-bold text-foreground">
+                      <span className="absolute -top-6 left-1/2 w-max -translate-x-1/2 whitespace-nowrap text-[11px] font-bold text-foreground sm:text-xs">
                         {s.value}
+                        <span className="ml-0.5 text-[9px] font-semibold text-muted sm:text-[10px]">
+                          {salesGrowth.unitShort}
+                        </span>
                       </span>
                     </motion.div>
                   </div>
@@ -126,16 +132,6 @@ export function Growth() {
               ))}
             </StaggerGroup>
           </div>
-
-          <Reveal className="mt-8">
-            <div className="flex items-start gap-3 rounded-2xl border border-accent/20 bg-accent/[0.05] p-5">
-              <Quote className="size-5 shrink-0 text-accent" />
-              <p className="text-sm font-medium text-slate-700">
-                Ready to set up a new dedicated plant at Chennai for Hikoki — continuing
-                our trajectory of customer-driven expansion.
-              </p>
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>

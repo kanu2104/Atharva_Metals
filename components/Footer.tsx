@@ -73,7 +73,18 @@ export function Footer() {
                     label: "Design & Development Center",
                     value: company.contact.designOffice,
                   },
-                  { icon: Mail, label: "Email", value: company.contact.email },
+                  {
+                    icon: Mail,
+                    label: "Email",
+                    value: company.contact.email,
+                    href: `mailto:${company.contact.email}`,
+                  },
+                  {
+                    icon: Phone,
+                    label: "Phone",
+                    value: company.contact.phone,
+                    href: `tel:${company.contact.phone.replace(/\s/g, "")}`,
+                  },
                 ].map((item) => (
                   <motion.div
                     key={item.label}
@@ -87,7 +98,16 @@ export function Footer() {
                       <div className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-200/90">
                         {item.label}
                       </div>
-                      <div className="mt-1 text-sm text-white/95">{item.value}</div>
+                      {"href" in item && item.href ? (
+                        <a
+                          href={item.href}
+                          className="mt-1 block text-sm text-white/95 transition-colors hover:text-white"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        <div className="mt-1 text-sm text-white/95">{item.value}</div>
+                      )}
                     </div>
                   </motion.div>
                 ))}
@@ -102,7 +122,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
           <div className="flex flex-col justify-between gap-10 lg:flex-row">
             <div className="max-w-sm">
-              <div className="flex items-center gap-3">
+              <div className="flex min-w-0 items-center gap-3">
                 <span className="flex shrink-0 items-center justify-center rounded-lg bg-white px-3 py-2 shadow-sm ring-1 ring-slate-200">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -113,7 +133,7 @@ export function Footer() {
                     className="h-9 w-auto max-w-[8rem] object-contain"
                   />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">
+                <span className="hidden min-w-0 text-[11px] font-semibold uppercase tracking-[0.18em] text-muted sm:block">
                   Metals &amp; Engineering
                 </span>
               </div>
@@ -150,9 +170,15 @@ export function Footer() {
                 </p>
                 <a
                   href={`mailto:${company.contact.email}`}
-                  className="mt-3 inline-block text-sm text-accent hover:underline"
+                  className="mt-3 block text-sm text-accent hover:underline"
                 >
                   {company.contact.email}
+                </a>
+                <a
+                  href={`tel:${company.contact.phone.replace(/\s/g, "")}`}
+                  className="mt-1 block text-sm text-accent hover:underline"
+                >
+                  {company.contact.phone}
                 </a>
               </div>
             </div>
