@@ -59,10 +59,7 @@ export function Growth() {
                       }`}
                     >
                       <span className="absolute -top-6 left-1/2 w-max -translate-x-1/2 whitespace-nowrap text-[11px] font-bold text-foreground sm:text-xs">
-                        {s.value}
-                        <span className="ml-0.5 text-[9px] font-semibold text-muted sm:text-[10px]">
-                          {salesGrowth.unitShort}
-                        </span>
+                        ${s.value}M
                       </span>
                     </motion.div>
                   </div>
