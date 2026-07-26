@@ -21,7 +21,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex h-screen min-h-[100svh] items-center overflow-hidden bg-[#0f3d5e]"
+      className="relative flex min-h-[100svh] items-start overflow-hidden bg-[#0f3d5e] pt-[calc(4.5rem+env(safe-area-inset-top))] sm:h-screen sm:items-center sm:pt-0"
     >
       {/* Background image — slow zoom in */}
       <motion.div
@@ -47,7 +47,7 @@ export function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pt-32 pb-16 sm:px-8 sm:pt-36 lg:pt-40">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-20 pt-6 sm:px-8 sm:pb-16 sm:pt-28 lg:pt-32">
         <div className="max-w-4xl">
           {/* Top small text */}
           <motion.p
@@ -57,18 +57,18 @@ export function Hero() {
             {company.heroTagline}
           </motion.p>
 
-          {/* Main title — kept clear of fixed navbar logo on mobile */}
+          {/* Main title — starts below fixed navbar on mobile */}
           <motion.h1
             {...fadeLeft(0.2)}
-            className="mt-5 font-display leading-[0.95] tracking-tight sm:mt-6"
+            className="mt-4 font-display leading-[0.95] tracking-tight sm:mt-6"
           >
-            <span className="block text-[clamp(2.5rem,11vw,5.625rem)] font-extrabold text-white">
+            <span className="block text-[clamp(2.35rem,10.5vw,5.625rem)] font-extrabold text-white">
               ATHARVA
             </span>
-            <span className="block text-[clamp(2.5rem,11vw,5.625rem)] font-extrabold text-[#3b82f6]">
+            <span className="block text-[clamp(2.35rem,10.5vw,5.625rem)] font-extrabold text-[#3b82f6]">
               METALS
             </span>
-            <span className="mt-2 block text-[clamp(0.95rem,3.2vw,1.75rem)] font-semibold uppercase tracking-wide text-white">
+            <span className="mt-2 block text-[clamp(0.9rem,3.2vw,1.75rem)] font-semibold uppercase tracking-wide text-white">
               &amp; Engineering Pvt. Ltd.
             </span>
           </motion.h1>
