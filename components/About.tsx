@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Boxes, Factory, Target } from "lucide-react";
+import { Boxes, Target } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Counter } from "@/components/ui/counter";
 import { Reveal, StaggerGroup, staggerItem } from "@/components/ui/reveal";
@@ -44,21 +44,8 @@ export function About() {
         <div className="mt-20 grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
           <Reveal direction="right">
             <div className="flex flex-col gap-6">
-              <div id="company-film" className="relative mb-3 scroll-mt-24 pb-4 sm:mb-5 sm:pb-2">
+              <div id="company-film" className="relative scroll-mt-24">
                 <VideoCard />
-                <div className="absolute -bottom-1 -right-3 hidden rounded-2xl glass-strong px-5 py-4 sm:block">
-                  <div className="flex items-center gap-3">
-                    <Factory className="size-7 text-accent" />
-                    <div>
-                      <div className="font-display text-xl font-bold text-foreground">
-                        1,90,000+
-                      </div>
-                      <div className="text-[10px] uppercase tracking-widest text-muted">
-                        Sq. Ft. Group Area
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="relative overflow-hidden rounded-3xl bg-[#0f3d5e] p-6 text-white shadow-[0_28px_50px_-28px_rgba(15,61,94,0.55)] sm:p-7">
