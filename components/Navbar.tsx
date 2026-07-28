@@ -12,8 +12,8 @@ const links = [
   { label: "Capabilities", href: "#capabilities" },
   { label: "Plants", href: "#plants" },
   { label: "Products", href: "#products" },
-  { label: "Global", href: "#global" },
   { label: "Customers", href: "#customers" },
+  { label: "Global", href: "#global" },
 ];
 
 export function Navbar() {
