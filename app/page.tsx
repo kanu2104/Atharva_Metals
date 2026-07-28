@@ -23,9 +23,9 @@ export default function Home() {
         <Capabilities />
         <Plants />
         <Products />
-        <Customers />
         <Certifications />
         <GlobalPresence />
+        <Customers />
       </main>
       <Footer />
     </>

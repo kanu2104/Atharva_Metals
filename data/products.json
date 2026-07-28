@@ -2,7 +2,6 @@
   "title": "Components That Power Global Brands",
   "description": "Precision metal stampings, deep-drawn parts and welded assemblies manufactured for OEMs across appliances, automotive and off-road vehicles.",
   "products": [
-    { "id": "p01", "name": "U-Channel Housing", "tag": "Stamping", "image": "/images/products/gallery/product-01.jpg" },
     { "id": "p02", "name": "Formed Chassis Panel", "tag": "Stamping", "image": "/images/products/gallery/product-02.jpg" },
     { "id": "p03", "name": "Structural Bracket", "tag": "Assembly", "image": "/images/products/gallery/product-03.jpg" },
     { "id": "p04", "name": "Ceiling Fan Blade", "tag": "Stamping", "image": "/images/products/gallery/product-04.jpg" },
@@ -13,7 +12,6 @@
     { "id": "p09", "name": "Rear Guard", "tag": "Welded Assembly", "image": "/images/products/gallery/product-09.jpg" },
     { "id": "p10", "name": "Deep Drawn Tray", "tag": "Deep Draw", "image": "/images/products/gallery/product-10.jpg" },
     { "id": "p11", "name": "Steering Arm Assembly", "tag": "Welded Assembly", "image": "/images/products/gallery/product-11.jpg" },
-    { "id": "p12", "name": "Pierced Precision Panel", "tag": "Stamping", "image": "/images/products/gallery/product-12.jpg" },
     { "id": "p13", "name": "Impeller Disc", "tag": "Stamping", "image": "/images/products/gallery/product-13.jpg" },
     { "id": "p14", "name": "Pin Bracket Assembly", "tag": "Welded Assembly", "image": "/images/products/gallery/product-14.jpg" },
     { "id": "p15", "name": "Component Set", "tag": "Stamping", "image": "/images/products/gallery/product-15.jpg" },

@@ -1,14 +1,48 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Globe2, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { StaggerGroup, staggerItem } from "@/components/ui/reveal";
 import customersData from "@/data/customers.json";
 
+type Customer = {
+  name: string;
+  segment: string;
+  since: number;
+  logo: string | null;
+  color: string;
+};
+
 const { globalPresence } = customersData;
+const customers = customersData.customers as Customer[];
+
+function CustomerLogo({ c, className }: { c: Customer; className?: string }) {
+  if (c.logo) {
+    return (
+      <Image
+        src={c.logo}
+        alt={`${c.name} logo`}
+        width={160}
+        height={80}
+        className={className}
+      />
+    );
+  }
+  return (
+    <span
+      className="font-display text-xl font-extrabold tracking-tight sm:text-2xl"
+      style={{ color: c.color }}
+    >
+      {c.name}
+    </span>
+  );
+}
 
 export function GlobalPresence() {
+  const marquee = [...customers, ...customers];
+
   return (
     <section id="global" className="section-pad relative overflow-hidden bg-white">
       <div className="absolute inset-0 grid-pattern opacity-60" />
@@ -50,6 +84,22 @@ export function GlobalPresence() {
             </motion.div>
           ))}
         </StaggerGroup>
+      </div>
+
+      {/* Customer logo marquee — directly under country cards */}
+      <div className="relative mt-14 overflow-hidden">
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-white to-transparent" />
+        <div className="flex w-max animate-marquee gap-4">
+          {marquee.map((c, i) => (
+            <div
+              key={`${c.name}-${i}`}
+              className="flex h-20 min-w-[200px] items-center justify-center rounded-2xl card px-8"
+            >
+              <CustomerLogo c={c} className="max-h-10 w-auto object-contain" />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
