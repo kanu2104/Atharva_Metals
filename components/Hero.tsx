@@ -79,7 +79,6 @@ export function Hero() {
             className="mt-8 max-w-2xl text-xl font-normal leading-relaxed text-[#e2e8f0] sm:text-2xl"
           >
             Precision Metal Stampings, Assemblies &amp; Engineering Solutions
-            <br className="hidden sm:block" />
             {" "}for a Stronger Tomorrow.
           </motion.p>
 

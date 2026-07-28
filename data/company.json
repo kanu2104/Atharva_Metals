@@ -8,7 +8,7 @@
   "heroHighlights": [
     { "icon": "Factory", "value": "3+", "label": "Manufacturing Plants" },
     { "icon": "Cog", "value": "1,20,000+", "label": "Sq Ft Operational Area" },
-    { "icon": "Users", "value": "7+", "label": "Global Customers" },
+    { "icon": "Users", "value": "9+", "label": "Global Customers" },
     { "icon": "Award", "value": "IATF 16949:2016", "label": "Certified" }
   ],
   "established": 2019,
@@ -50,9 +50,11 @@
   "introduction": {
     "title": "Company Introduction",
     "paragraphs": [
-      "Atharva Metals & Engineering is in the business of metal stampings and assemblies, serving the white goods, automotive and off-road vehicle industries.",
-      "In operation since 2019 with Haier Appliances as our first customer, we have grown into a trusted multi-location manufacturing partner for global OEMs.",
-      "Our flagship plant in MIDC Ranjangaon spans 64,560 sq. ft. and houses Stage & Progressive Stamping, Welding, Pipe Bending and Special Purpose Machines."
+      "Atharva Metals & Engineering manufactures precision metal stampings and assemblies for the white goods, automotive, off-road vehicle and furniture industries.",
+      "In operation since 2019 — with Haier Appliances as our first customer — we have grown into a trusted multi-location manufacturing partner for global OEMs.",
+      "Our flagship plant in MIDC Ranjangaon spans 64,560 sq. ft. and houses stage and progressive stamping, welding, pipe bending and special purpose machines.",
+      "In December 2025, we commissioned a new 25,000 sq. ft. plant at Vasai near Mumbai, equipped with large-tonnage presses and welding machines to supply Blue Star.",
+      "Our third plant at Bavla, Ahmedabad serves Versuni (Philips) — a fully automated facility with a wide range of presses and robotic systems."
     ],
     "qualityPolicy": "We at Atharva Metals & Engineering are committed to becoming the leader in the business of stamped metal components by effectively and efficiently implementing a Quality Management System, continuously upgrading our processes and striving to exceed our goals. We enhance customer satisfaction through continual improvement in all areas of the organisation while satisfying all our stakeholders."
   },

@@ -1,98 +1,33 @@
 {
-  "categories": [
-    {
-      "id": "white-goods",
-      "title": "White Goods",
-      "tagline": "Sheet metal components & assemblies for appliances",
-      "products": [
-        {
-          "name": "Deep Freezer & Refrigerator Panels",
-          "customer": "Haier",
-          "image": "/images/products/deep-freezer.jpg",
-          "parts": ["Back Panels", "Compressor Base Plates", "Bottom Panel Assemblies", "Caster Plates", "Hinge Reinforcements"]
-        },
-        {
-          "name": "Water Heater Components",
-          "customer": "Haier",
-          "image": "/images/products/water-heater.jpg",
-          "parts": ["Top & Bottom Domes", "Square & Round Flanges", "Lock Nose"]
-        },
-        {
-          "name": "AC Sheet Metal Parts",
-          "customer": "Blue Star / Haier",
-          "image": "/images/products/ac-parts.jpg",
-          "parts": ["Fan Panel & FRS", "Base Panel", "LH / RH Panels", "Channel & Valve Plates", "Motor Mount & Partition", "Top Panel"]
-        },
-        {
-          "name": "Ceiling Fan Blades",
-          "customer": "Atomberg",
-          "image": "/images/products/ceiling-fan.jpg",
-          "parts": ["Aluminium Ceiling Fan Blades"]
-        }
-      ]
-    },
-    {
-      "id": "deep-draw",
-      "title": "Deep Draw Parts",
-      "tagline": "Precision deep-drawn components",
-      "products": [
-        {
-          "name": "Deep Draw Assemblies",
-          "customer": "Kitchen Appliances",
-          "image": "/images/products/deep-draw.jpg",
-          "parts": ["Bottom Dome Assembly – T-1.6mm, 120mm deep", "Hob with 53mm deep draw"]
-        }
-      ]
-    },
-    {
-      "id": "off-road",
-      "title": "Off-Road Vehicle",
-      "tagline": "Heavy fabricated tube welding assemblies",
-      "products": [
-        {
-          "name": "Off-Road Utility Vehicle Assemblies",
-          "customer": "Toro",
-          "image": "/images/products/off-road-vehicle.jpg",
-          "parts": ["Deck Strut Assembly", "Rear Guard", "Tube-Canopy Mount", "Hip Restraint ASM (LH & RH)"]
-        },
-        {
-          "name": "Heavy Fabricated Steering Assemblies",
-          "customer": "Toro",
-          "image": "/images/products/lawn-mower.jpg",
-          "parts": ["Steering Arm ASM (Welded)", "3mm thick tube columns", "Brackets 6mm to 16mm thick"]
-        },
-        {
-          "name": "Welded Tube Assemblies",
-          "customer": "Toro",
-          "image": "/images/products/welded-assembly.jpg",
-          "parts": ["Tube-Mount Front", "Heavy fabricated tube welding assemblies"]
-        }
-      ]
-    },
-    {
-      "id": "power-tools",
-      "title": "Power Tools & Furniture",
-      "tagline": "Precision stamped & deep-drawn parts",
-      "products": [
-        {
-          "name": "Power Tool Parts",
-          "customer": "Hikoki",
-          "image": "/images/products/welded-assembly.jpg",
-          "parts": ["Hook", "Blade Detector", "Nail Feeder", "Nail Rail", "Trigger"]
-        },
-        {
-          "name": "Air Fryer Parts",
-          "customer": "Versuni (Philips)",
-          "image": "/images/products/deep-draw.jpg",
-          "parts": ["Heat Shield", "Bottom Tray", "Dip Tray", "Crispy Tray", "Clip", "Fan"]
-        },
-        {
-          "name": "Furniture Mechanism Parts",
-          "customer": "Haworth & AIS",
-          "image": "/images/products/welded-assembly.jpg",
-          "parts": ["GH2 Glide Housing", "L-Bracket", "Top Plate", "Twist Plate", "PED & LAT Cam / Catch"]
-        }
-      ]
-    }
+  "title": "Components That Power Global Brands",
+  "description": "Precision metal stampings, deep-drawn parts and welded assemblies manufactured for OEMs across appliances, automotive and off-road vehicles.",
+  "products": [
+    { "id": "p01", "name": "U-Channel Housing", "tag": "Stamping", "image": "/images/products/gallery/product-01.jpg" },
+    { "id": "p02", "name": "Formed Chassis Panel", "tag": "Stamping", "image": "/images/products/gallery/product-02.jpg" },
+    { "id": "p03", "name": "Structural Bracket", "tag": "Assembly", "image": "/images/products/gallery/product-03.jpg" },
+    { "id": "p04", "name": "Ceiling Fan Blade", "tag": "Stamping", "image": "/images/products/gallery/product-04.jpg" },
+    { "id": "p05", "name": "Appliance Panel", "tag": "Stamping", "image": "/images/products/gallery/product-05.jpg" },
+    { "id": "p06", "name": "Steering Arm Assembly", "tag": "Welded Assembly", "image": "/images/products/gallery/product-06.jpg" },
+    { "id": "p07", "name": "Cover Panel", "tag": "Stamping", "image": "/images/products/gallery/product-07.jpg" },
+    { "id": "p08", "name": "Support Beam", "tag": "Stamping", "image": "/images/products/gallery/product-08.jpg" },
+    { "id": "p09", "name": "Rear Guard", "tag": "Welded Assembly", "image": "/images/products/gallery/product-09.jpg" },
+    { "id": "p10", "name": "Deep Drawn Tray", "tag": "Deep Draw", "image": "/images/products/gallery/product-10.jpg" },
+    { "id": "p11", "name": "Steering Arm Assembly", "tag": "Welded Assembly", "image": "/images/products/gallery/product-11.jpg" },
+    { "id": "p12", "name": "Pierced Precision Panel", "tag": "Stamping", "image": "/images/products/gallery/product-12.jpg" },
+    { "id": "p13", "name": "Impeller Disc", "tag": "Stamping", "image": "/images/products/gallery/product-13.jpg" },
+    { "id": "p14", "name": "Pin Bracket Assembly", "tag": "Welded Assembly", "image": "/images/products/gallery/product-14.jpg" },
+    { "id": "p15", "name": "Component Set", "tag": "Stamping", "image": "/images/products/gallery/product-15.jpg" },
+    { "id": "p16", "name": "Pierced Final Part", "tag": "Stamping", "image": "/images/products/gallery/product-16.jpg" },
+    { "id": "p17", "name": "Precision Stamping", "tag": "Stamping", "image": "/images/products/gallery/product-17.jpg" },
+    { "id": "p18", "name": "Tube Weld Assembly", "tag": "Welded Assembly", "image": "/images/products/gallery/product-18.jpg" },
+    { "id": "p19", "name": "Sheet Metal Housing", "tag": "Stamping", "image": "/images/products/gallery/product-19.jpg" },
+    { "id": "p20", "name": "Mounting Bracket", "tag": "Assembly", "image": "/images/products/gallery/product-20.jpg" },
+    { "id": "p21", "name": "Formed Metal Panel", "tag": "Stamping", "image": "/images/products/gallery/product-21.jpg" },
+    { "id": "p22", "name": "Fabricated Guard", "tag": "Welded Assembly", "image": "/images/products/gallery/product-22.jpg" },
+    { "id": "p23", "name": "Stamped Plate", "tag": "Stamping", "image": "/images/products/gallery/product-23.jpg" },
+    { "id": "p24", "name": "Precision Component", "tag": "Stamping", "image": "/images/products/gallery/product-24.jpg" },
+    { "id": "p25", "name": "Deep Formed Part", "tag": "Deep Draw", "image": "/images/products/gallery/product-25.jpg" },
+    { "id": "p26", "name": "Welded Bracket", "tag": "Welded Assembly", "image": "/images/products/gallery/product-26.jpg" },
+    { "id": "p27", "name": "Stampings Set", "tag": "Stamping", "image": "/images/products/gallery/product-27.jpg" }
   ]
 }

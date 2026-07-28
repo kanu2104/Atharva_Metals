@@ -9,6 +9,11 @@ import { VideoCard } from "@/components/VideoCard";
 import company from "@/data/company.json";
 
 export function About() {
+  const paragraphs = company.introduction.paragraphs;
+  const intro = paragraphs[0];
+  const history = paragraphs[1];
+  const plantLines = paragraphs.slice(2);
+
   return (
     <section id="about" className="section-pad relative bg-white">
       <div className="absolute inset-0 grid-pattern opacity-60" />
@@ -19,7 +24,6 @@ export function About() {
           description="In the business of precision metal stampings and assemblies since 2019 — engineering excellence from concept to consignment for the world's leading OEMs."
         />
 
-        {/* Stats — light glassmorphism */}
         <StaggerGroup className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {company.stats.map((stat) => (
             <motion.div
@@ -37,50 +41,74 @@ export function About() {
           ))}
         </StaggerGroup>
 
-        {/* Intro + video */}
-        <div className="mt-20 grid items-center gap-12 lg:grid-cols-2">
+        <div className="mt-20 grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
           <Reveal direction="right">
-            <div id="company-film" className="relative scroll-mt-24">
-              <VideoCard />
-              <div className="absolute -bottom-6 -right-4 hidden rounded-2xl glass-strong px-6 py-5 sm:block">
-                <div className="flex items-center gap-3">
-                  <Factory className="size-8 text-accent" />
-                  <div>
-                    <div className="font-display text-2xl font-bold text-foreground">
-                      1,90,000+
-                    </div>
-                    <div className="text-xs uppercase tracking-widest text-muted">
-                      Sq. Ft. Group Area
+            <div className="flex flex-col gap-6">
+              <div id="company-film" className="relative mb-3 scroll-mt-24 pb-4 sm:mb-5 sm:pb-2">
+                <VideoCard />
+                <div className="absolute -bottom-1 -right-3 hidden rounded-2xl glass-strong px-5 py-4 sm:block">
+                  <div className="flex items-center gap-3">
+                    <Factory className="size-7 text-accent" />
+                    <div>
+                      <div className="font-display text-xl font-bold text-foreground">
+                        1,90,000+
+                      </div>
+                      <div className="text-[10px] uppercase tracking-widest text-muted">
+                        Sq. Ft. Group Area
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden rounded-3xl bg-[#0f3d5e] p-6 text-white shadow-[0_28px_50px_-28px_rgba(15,61,94,0.55)] sm:p-7">
+                <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-white/10 blur-2xl" />
+                <div className="relative">
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15">
+                      <Target className="size-4 text-[#93c5fd]" />
+                    </span>
+                    <span className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-[#93c5fd]">
+                      Quality Policy
+                    </span>
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-blue-50/95 sm:text-[15px]">
+                    {company.introduction.qualityPolicy}
+                  </p>
                 </div>
               </div>
             </div>
           </Reveal>
 
           <Reveal direction="left">
-            <div className="flex flex-col gap-5">
-              {company.introduction.paragraphs.map((p, i) => (
-                <p key={i} className="text-base leading-relaxed text-slate-600 sm:text-lg">
-                  {p}
-                </p>
-              ))}
-              <div className="mt-2 rounded-2xl border border-accent/20 bg-accent/[0.05] p-6">
-                <div className="flex items-center gap-2 text-accent">
-                  <Target className="size-5" />
-                  <span className="font-display text-sm font-semibold uppercase tracking-[0.18em]">
-                    Quality Policy
-                  </span>
+            <div className="flex flex-col lg:pt-1">
+              <p className="text-base leading-relaxed text-slate-700 sm:text-lg">
+                {intro}
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+                {history}
+              </p>
+
+              <div className="mt-8">
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                  Manufacturing Footprint
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                  {company.introduction.qualityPolicy}
-                </p>
+                <div className="mt-4 space-y-5 border-l-2 border-accent/25 pl-5">
+                  {plantLines.map((p, i) => (
+                    <p
+                      key={i}
+                      className="relative text-sm leading-relaxed text-slate-600 sm:text-base"
+                    >
+                      <span className="absolute -left-[1.55rem] top-2 h-2 w-2 rounded-full bg-accent ring-4 ring-accent/15" />
+                      {p}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           </Reveal>
         </div>
 
-        {/* Group companies */}
         <div className="mt-24">
           <Reveal>
             <div className="flex items-center gap-3">
@@ -119,7 +147,6 @@ export function About() {
             ))}
           </StaggerGroup>
         </div>
-
       </div>
     </section>
   );
