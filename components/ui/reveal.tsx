@@ -4,19 +4,11 @@ import { motion, type Variants } from "framer-motion";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-const directions = {
-  up: { y: 36, x: 0 },
-  down: { y: -36, x: 0 },
-  left: { x: 56, y: 0 },
-  right: { x: -56, y: 0 },
-  none: { x: 0, y: 0 },
-};
-
 type RevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
-  direction?: keyof typeof directions;
+  direction?: "up" | "down" | "left" | "right" | "none";
   once?: boolean;
 };
 
@@ -24,32 +16,19 @@ export function Reveal({
   children,
   className,
   delay = 0,
-  direction = "up",
   once = true,
 }: RevealProps) {
-  const offset = directions[direction];
-  const variants: Variants = {
-    hidden: { opacity: 0, ...offset, filter: "blur(6px)" },
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      filter: "blur(0px)",
-      transition: {
-        duration: 0.7,
-        delay,
-        ease: [0.21, 0.47, 0.32, 0.98],
-      },
-    },
-  };
-
   return (
     <motion.div
       className={className}
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once, margin: "-80px" }}
+      initial={false}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once, amount: 0.12 }}
+      transition={{
+        duration: 0.55,
+        delay,
+        ease: [0.21, 0.47, 0.32, 0.98],
+      }}
     >
       {children}
     </motion.div>
@@ -70,7 +49,7 @@ export function StaggerGroup({
       className={cn(className)}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={{
         hidden: {},
         visible: { transition: { staggerChildren: stagger } },
@@ -82,11 +61,10 @@ export function StaggerGroup({
 }
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 32, filter: "blur(6px)" },
+  hidden: { opacity: 1, y: 0 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] },
+    transition: { duration: 0.55, ease: [0.21, 0.47, 0.32, 0.98] },
   },
 };

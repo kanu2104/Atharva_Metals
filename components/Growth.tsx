@@ -48,15 +48,15 @@ export function Growth() {
                 >
                   <div className="flex w-full flex-1 items-end justify-center">
                     <motion.div
-                      initial={{ height: 0 }}
-                      whileInView={{ height: `${(s.value / maxValue) * 100}%` }}
-                      viewport={{ once: true, margin: "-60px" }}
+                      initial={false}
+                      animate={{ height: `${(s.value / maxValue) * 100}%` }}
                       transition={{ duration: 1, delay: i * 0.1, ease: "easeOut" }}
                       className={`relative w-full max-w-[44px] rounded-t-lg ${
                         s.projected
                           ? "bg-gradient-to-t from-accent/40 to-accent/70 ring-1 ring-inset ring-accent/50"
                           : "bg-gradient-to-t from-[#0f3d5e] to-accent"
                       }`}
+                      style={{ height: `${(s.value / maxValue) * 100}%` }}
                     >
                       <span className="absolute -top-6 left-1/2 w-max -translate-x-1/2 whitespace-nowrap text-[11px] font-bold text-foreground sm:text-xs">
                         ${s.value}M

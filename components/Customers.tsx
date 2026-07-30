@@ -9,7 +9,6 @@ import customersData from "@/data/customers.json";
 type Customer = {
   name: string;
   segment: string;
-  since: number;
   logo: string | null;
   color: string;
 };
@@ -65,14 +64,6 @@ export function Customers() {
                   {c.name}
                 </div>
                 <div className="truncate text-xs text-muted">{c.segment}</div>
-              </div>
-              <div className="text-right">
-                <div className="font-display text-sm font-bold text-accent">
-                  {c.since}
-                </div>
-                <div className="text-[10px] uppercase tracking-wider text-muted">
-                  Since
-                </div>
               </div>
             </motion.div>
           ))}

@@ -29,7 +29,7 @@ export function Navbar() {
 
   return (
     <motion.header
-      initial={{ y: -80, opacity: 0 }}
+      initial={false}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
       className="fixed inset-x-0 top-0 z-50"
@@ -45,17 +45,15 @@ export function Navbar() {
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-5 sm:h-20 sm:px-8">
           <a
             href="#home"
-            className="group flex min-w-0 max-w-[calc(100%-3.5rem)] items-center gap-2.5 sm:gap-3 lg:max-w-none"
+            className="group flex min-w-0 max-w-[calc(100%-3.5rem)] items-center gap-2 sm:gap-2.5 lg:max-w-none"
           >
-            <span className="flex shrink-0 items-center justify-center rounded-lg bg-white px-2 py-1 shadow-sm ring-1 ring-slate-200/70 transition-transform duration-300 group-hover:scale-[1.03] sm:px-2.5 sm:py-1.5">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/favicon.png"
-                alt="Atharva Metals & Engineering"
-                width={114}
-                height={75}
-                className="h-6 w-auto max-w-[5.5rem] object-contain sm:h-7 sm:max-w-[7rem]"
-              />
+            <span
+              className={cn(
+                "font-display text-[11px] font-extrabold uppercase tracking-[0.18em] transition-colors lg:tracking-[0.24em]",
+                scrolled ? "text-foreground" : "text-white"
+              )}
+            >
+              ATHARVA
             </span>
             <span
               className={cn(
@@ -75,7 +73,7 @@ export function Navbar() {
                 className={cn(
                   "rounded-full px-4 py-2 text-sm font-medium transition-colors",
                   scrolled
-                    ? "text-muted hover:text-accent"
+                    ? "text-slate-700 hover:text-accent"
                     : "text-blue-50/90 hover:text-white"
                 )}
               >

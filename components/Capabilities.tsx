@@ -100,9 +100,11 @@ export function Capabilities() {
             <div className="relative h-56 w-full lg:h-full lg:min-h-[20rem]">
               <Image
                 src={capabilities.rawMaterials.image}
-                alt="Raw materials processed"
+                alt="Raw materials processed — steel coils in warehouse"
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                quality={90}
+                className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent" />
             </div>

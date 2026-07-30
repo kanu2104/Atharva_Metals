@@ -43,12 +43,10 @@ export function HeadcountChart() {
               {segments.map((s, i) => (
                 <motion.div
                   key={s.key}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${(s.value / total) * 100}%` }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 1, delay: i * 0.15, ease: "easeOut" }}
+                  initial={false}
                   className="h-full"
                   style={{
+                    width: `${(s.value / total) * 100}%`,
                     backgroundColor: ["#60a5fa", "#3b82f6", "#1d4ed8"][i],
                   }}
                 />
@@ -74,11 +72,9 @@ export function HeadcountChart() {
                   </div>
                   <div className="h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
                     <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${pct}%` }}
-                      viewport={{ once: true, margin: "-60px" }}
-                      transition={{ duration: 1, delay: i * 0.15, ease: "easeOut" }}
+                      initial={false}
                       className="h-full rounded-full bg-gradient-to-r from-accent-soft to-accent"
+                      style={{ width: `${pct}%` }}
                     />
                   </div>
                 </div>

@@ -8,7 +8,7 @@ import company from "@/data/company.json";
 const stats = company.heroHighlights;
 
 const fadeLeft = (delay: number) => ({
-  initial: { opacity: 0, x: -24 },
+  initial: { opacity: 1, x: 0 },
   animate: { opacity: 1, x: 0 },
   transition: {
     duration: 0.75,
@@ -87,7 +87,7 @@ export function Hero() {
             {stats.map((item, index) => (
               <motion.div
                 key={item.label}
-                initial={{ opacity: 0, y: 28 }}
+                initial={{ opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.6,
@@ -109,7 +109,7 @@ export function Hero() {
 
           {/* CTA buttons */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.88 }}
+            initial={{ opacity: 1, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",

@@ -34,8 +34,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
-    overflow-x: clip;
-    max-width: 100%;
+    overflow-x: hidden;
   }
 
   body {
@@ -44,8 +43,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    overflow-x: clip;
-    max-width: 100%;
+    overflow-x: hidden;
   }
 
   ::selection {
