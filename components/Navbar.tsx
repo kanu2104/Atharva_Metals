@@ -45,11 +45,11 @@ export function Navbar() {
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-5 sm:h-20 sm:px-8">
           <a
             href="#home"
-            className="group flex min-w-0 max-w-[calc(100%-3.5rem)] items-center gap-2 sm:gap-2.5 lg:max-w-none"
+            className="group flex min-w-0 max-w-[calc(100%-3.5rem)] flex-col leading-none sm:flex-row sm:items-center sm:gap-2 sm:leading-normal lg:max-w-none lg:gap-2.5"
           >
             <span
               className={cn(
-                "font-display text-[11px] font-extrabold uppercase tracking-[0.18em] transition-colors lg:tracking-[0.24em]",
+                "font-display text-[11px] font-extrabold uppercase tracking-[0.16em] transition-colors sm:tracking-[0.18em] lg:tracking-[0.24em]",
                 scrolled ? "text-foreground" : "text-white"
               )}
             >
@@ -57,7 +57,7 @@ export function Navbar() {
             </span>
             <span
               className={cn(
-                "hidden min-w-0 truncate text-[11px] font-semibold uppercase tracking-[0.18em] transition-colors lg:block lg:tracking-[0.24em]",
+                "mt-0.5 min-w-0 text-[9px] font-semibold uppercase tracking-[0.1em] transition-colors sm:mt-0 sm:text-[11px] sm:tracking-[0.18em] lg:tracking-[0.24em]",
                 scrolled ? "text-muted" : "text-blue-50/90"
               )}
             >
